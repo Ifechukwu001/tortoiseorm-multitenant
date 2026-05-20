@@ -1,0 +1,15 @@
+[project]
+name = "tortoiseorm-multitenant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.136.1",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.1",
+    "tortoise-orm[asyncpg]>=1.1.7",
+]
+
+[tool.tortoise]
+tortoise_orm = "app.orm.config.TORTOISE_CONFIG"
